@@ -69,9 +69,6 @@ td {
     border: 1px solid var(--alice-blue, #e7ecef);
     padding: 3px;
 }
-th td{
-    background: var(--cerulean-frost, #6096ba);
-}
 tr:nth-child(even) {
     background: var(--charcoal)
 }
@@ -83,7 +80,9 @@ tr:nth-child(even) {
     flex-direction: column;
     justify-content: center;
 }
-
+.header {
+    background: var(--cerulean-frost, #6096ba);
+}
 .hero-container{
     display: flex;
     flex-direction: column;
