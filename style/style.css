@@ -36,6 +36,17 @@ body {
     background-color: var(--charcoal, #274156);
     color: var(--alice-blue, #e7ecef);
 }
+
+footer {
+    text-align: center;
+    background-color: var(--jet-gray);
+}
+
+footer p {
+    margin: 0;
+    padding: 10px 0;
+}
+
 h1 {
     text-align: center;
     font-family: "Roboto Mono", monospace;
@@ -45,9 +56,10 @@ h1 {
 nav {
     height: var(--navbar-height);
     width: 100%;
+    top: 0px;
     position: fixed;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     
     background-color: var(--cerulean-frost, #6096ba);
 
@@ -57,14 +69,11 @@ td {
     border: 1px solid var(--alice-blue, #e7ecef);
     padding: 3px;
 }
-
-#topnav a {
-    margin: 15px;
-    font-size: 18px;
+th td{
+    background: var(--cerulean-frost, #6096ba);
 }
-
-#topnav a:hover {
-    color: var(--jet-gray)
+tr:nth-child(even) {
+    background: var(--charcoal)
 }
 
 
@@ -119,13 +128,20 @@ td {
     border-color: var(--alice-blue, #e7ecef);
 }
 
+#haiku {
+    font-style:italic;
+
+}
+
 #nav-space {
     height: var(--navbar-height);
 }
 
-/* .hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-} */
+#topnav a {
+    margin: 15px;
+    font-size: 18px;
+}
+
+#topnav a:hover {
+    color: var(--jet-gray)
+}
