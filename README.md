@@ -14,3 +14,4 @@ https://crooklan.github.io/
 *Sticky Nav
 *Sticky Footer
 *Striped Table Rows
+*Favicon Added
