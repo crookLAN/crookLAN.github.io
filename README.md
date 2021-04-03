@@ -15,3 +15,4 @@ https://crooklan.github.io/
 * Made 'a' tags white with different hover and visited colors
 * Each infomation section is in it's own box with a dark background
 * Each info box is contained in a flex container
+* Navbar made sticky to the top with its children made into links

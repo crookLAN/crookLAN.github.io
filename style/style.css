@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono');
 
 :root {
+    --navbar-height: 3em;
     --alice-blue: #e7ecef;
     --cerulean-frost: #6096ba;
     --charcoal: #274156;
     --battleship: #8b8c89;
     --jet-gray: #373737;
   }
+
+*{
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-padding-top: var(--navbar-height, 3em); /* height of sticky header */
+}
 
 a:link {
     color: var(--alice-blue, #e7ecef);
@@ -20,7 +29,7 @@ a:hover {
     color: var(--cerulean-frost, #6096ba);
 }
 
-body, html {
+body {
     margin: 0;
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
@@ -31,7 +40,17 @@ h1 {
     text-align: center;
     font-family: "Roboto Mono", monospace;
     font-weight: bolder;
+    padding: 0 55px;
+}
+nav {
+    height: var(--navbar-height);
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: right;
     
+    background-color: var(--cerulean-frost, #6096ba);
+
 }
 
 td {
@@ -39,10 +58,20 @@ td {
     padding: 3px;
 }
 
+#topnav a {
+    margin: 15px;
+    font-size: 18px;
+}
+
+#topnav a:hover {
+    color: var(--jet-gray)
+}
+
+
 .flex-container{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -73,7 +102,7 @@ td {
     height: 486px;
     width: 500px;
     background-position-x: center;
-    background-position-y: 86px ;
+    background-position-y: 138px ;
     margin-left: auto;
     margin-right: auto;
     /* border-radius: 20px; */
@@ -88,6 +117,10 @@ td {
     border-style: solid;
     border-width: 2px;
     border-color: var(--alice-blue, #e7ecef);
+}
+
+#nav-space {
+    height: var(--navbar-height);
 }
 
 /* .hero-text {
